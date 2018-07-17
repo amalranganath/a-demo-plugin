@@ -1,0 +1,38 @@
+{
+    "name": "amalranganath/a-demo-plugin",
+    "description": "A  Framework Demo Plugin",
+    "keywords": [
+        "a demo plugin",
+        "a framework",
+        "demo plugin"
+    ],
+    "homepage": "https://github.com/amalranganath/a-demo-plugin",
+    "type": "project",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Amal Ranganath",
+            "homepage": "https://www.facebook.com/amalranganath"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "amalranganath/a": "*",
+        "stripe/stripe-php": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "config": {
+        "process-timeout": 1800,
+        "fxp-asset": {
+            "enabled": false
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}
