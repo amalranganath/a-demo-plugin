@@ -21,8 +21,8 @@
         "amalranganath/a": "*",
         "stripe/stripe-php": "*"
     },
-    "require-dev": {
-        "phpunit/phpunit": "~4.0"
+    "autoload": {
+        "classmap": ["vendor/amalranganath/a"]
     },
     "config": {
         "process-timeout": 1800,
