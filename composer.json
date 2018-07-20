@@ -8,7 +8,7 @@
     ],
     "homepage": "https://github.com/amalranganath/a-demo-plugin",
     "type": "project",
-    "license": "GPLv2",
+    "license": "MIT",
     "authors": [
         {
             "name": "Amal Ranganath",
