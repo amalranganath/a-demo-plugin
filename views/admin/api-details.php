@@ -11,7 +11,7 @@ if (!defined('ABSPATH')) {
 <h1><?= __("Stripe API Details", A::$config->i18n); ?></h1>
 
 <?php
-AForm::begin('');
+AForm::begin('api-details');
 //API
 AForm::section(array(
     'title' => __('', A::$config->i18n),

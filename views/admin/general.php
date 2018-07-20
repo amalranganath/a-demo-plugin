@@ -12,7 +12,7 @@ if (!defined('ABSPATH')) {
 <h1><?= __("General options", A::$config->i18n); ?></h1>
 
 <?php
-AForm::begin('');
+AForm::begin('general');
 //Pages
 AForm::section(array(
     'title' => __('', A::$config->i18n),

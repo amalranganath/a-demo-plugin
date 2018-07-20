@@ -46,8 +46,9 @@ if (!class_exists('WPJSAdmin')) {
         protected function actions() {
             //init model class for current tab
             if ($this->page == 'wpjs-settings' && isset($_POST)) {
-                //if post
-                if ($options = $_POST) {
+                //if post and verify
+                if (isset($_POST[$this->current]) && wp_verify_nonce($_POST[$this->current])) {
+                    $options = $_POST;
                     unset($options['submit']);
                     if ($this->current == 'general')
                         $options['showCurrency'] = isset($options['showCurrency']);
